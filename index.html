@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VÉANT - Premium Clothing</title>
+    <style>
+        body {
+            background-image: url('background.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(34, 34, 34, 0.8);
+            padding: 10px;
+            gap: 50px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 100px;
+        }
+        .navbar a:hover {
+            background-color: #444;
+        }
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .welcome-text {
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        .brand-name {
+            font-size: 70px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
+        }
+        .cart-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: auto;
+            z-index: 1000;
+        }
+        .shop-container {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background-color: rgba(17, 17, 17, 0.8);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 250px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 a {
+            color: white;
+            text-decoration: none;
+        }
+        .product h3 a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(17, 17, 17, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">HOME PAGE</a>
+        <a href="#shop">SHOP</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+    
+    <a href="#cart">
+        <img src="troliweb.png" alt="Cart" class="cart-icon">
+    </a>
+    
+    <div class="hero">
+        <div class="welcome-text">WELCOME TO</div>
+        <div class="brand-name">VÉANT CLOTHING</div>
+    </div>
+    
+    <div id="shop" class="shop-container">
+        <div class="product">
+            <img src="flower_clothing.jpg" alt="FLEUR NOIRE">
+            <h3><a href="https://wa.me/6281907555786?text=Halo%2C+saya+ingin+order+FLEUR+NOIRE" target="_blank">FLEUR NOIRE</a></h3>
+            <p>Rp 135.000</p>
+        </div>
+        <div class="product">
+            <img src="galaxy_clothing.jpg" alt="GALACTIC ODYSSEY">
+            <h3><a href="https://wa.me/6281907555786?text=Halo%2C+saya+ingin+order+GALACTIC+ODYSSEY" target="_blank">GALACTIC ODYSSEY</a></h3>
+            <p>Rp 180.000</p>
+        </div>
+        <div class="product">
+            <img src="abstrak_clothing.jpg" alt="NOIR DÉFORMÉ">
+            <h3><a href="https://www.instagram.com/veant.clo" target="_blank">NOIR DÉFORMÉ</a></h3>
+            <p>Rp 125.000</p>
+        </div>
+        <div class="product">
+            <img src="veant_clothing.jpg" alt="NOIR VISIONNAIRE">
+            <h3><a href="https://www.instagram.com/veant.clo" target="_blank">NOIR VISIONNAIRE</a></h3>
+            <p>Rp 150.000</p>
+        </div>
+    </div>
+    
+    <footer id="contact">
+        <p>Contact us:</p>
+        <p><a href="https://wa.me/6281907555786" style="color: white;">+62 819-0755-5786</a></p>
+        <p><a href="https://www.instagram.com/veant.clo" style="color: white;">@veant.clo</a></p>
+    </footer>
+</body>
+</html>
